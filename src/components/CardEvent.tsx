@@ -1,15 +1,7 @@
 import Icon from "@expo/vector-icons/FontAwesome5";
 import * as React from "react";
 import { View, Image, Text } from "react-native";
-
-export interface CardEventProps {
-  image: string;
-  day: string;
-  tagName?: string;
-  title: string;
-  subTitle: string;
-  expiredDate: string;
-}
+import { CardEventProps } from "../utils/types/InterfaceCard";
 
 export const CardEvent = (props: CardEventProps) => {
   return (

@@ -1,15 +1,5 @@
 import { Image, Text, TouchableOpacity, View } from "react-native";
-import { CardEventProps } from "./CardEvent";
-
-export interface CardRoomProps {
-  id: number;
-  room_name: string;
-  image: string;
-  status: boolean;
-  route?: () => void;
-  num_events: number;
-  event: CardEventProps[];
-}
+import { CardRoomProps } from "../utils/types/InterfaceCard";
 
 export const CardRoom = (props: CardRoomProps) => {
   return (
